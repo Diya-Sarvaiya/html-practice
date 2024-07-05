@@ -1,13 +1,151 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    HELLO
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <!--font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <script type="module" src="/main.js"></script>
+  <header class="primary-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#"><img src="images/logo.svg" alt="manage" /></a>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+          <img class="icon-hamburger" src="images/icon-hamburger.svg" alt="" aria-hidden="true">
+          <img class="icon-close" src="images/icon-close.svg" alt="" aria-hidden="true">
+          <span class="visually-hidden"></span></button>
+        <nav class="primary-navigation" id="primary-navigation">
+          <ul role="list" class="nav-list" aria-label="Primary" role="llist">
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Community</a></li>
+          </ul>
+        </nav>
+        <button class="button" style="display: none;">Get Started</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="padding-block-900">
+    <div class="container">
+      <div class="even-columns">
+        <div>
+          <h1 class="fs-primary-heading fw-bold">
+            Bring everyone together to build better products.
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum aspernatur aliquid consequuntur expedita
+            quia eius modi maiores repellat veniam. Culpa officia iusto pariatur provident laboriosam vel iste quae
+            eaque laudantium.
+          </p>
+          <button class="button">Get Started</button>
+        </div>
+        <div>
+          <img src="images/illustration-intro.svg" alt="illustration-intro">
+        </div>
+      </div>
+      <div class="even-columns">
+        <div>
+          <h2 class="fs-secondary-heading fw-bold">
+            What's different about Manage?
+          </h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto voluptatum itaque sequi ullam placeat,
+            assumenda fuga in eos. Distinctio placeat quidem vero aut error odio molestiae velit itaque tempore
+            delectus.</p>
+        </div>
+        <div>
+          <ul role="list" class="numbered-list">
+            <li>
+              <h3 class="fs-600 fw-bold">Lorem ipsum dolor sit amet</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus possimus adipisci quasi a et.
+                Non hic, ipsa nesciunt sit officia nisi aliquam placeat consequuntur, quasi itaque sed reprehenderit
+                odit voluptatem!</p>
+            </li>
+            <li>
+              <h3 class="fs-600 fw-bold">Lorem ipsum dolor sit amet</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus possimus adipisci quasi a et.
+                Non hic, ipsa nesciunt sit officia nisi aliquam placeat consequuntur, quasi itaque sed reprehenderit
+                odit voluptatem!</p>
+            </li>
+            <li>
+              <h3 class="fs-600 fw-bold">Lorem ipsum dolor sit amet</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus possimus adipisci quasi a et.
+                Non hic, ipsa nesciunt sit officia nisi aliquam placeat consequuntur, quasi itaque sed reprehenderit
+                odit voluptatem!</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="carasoul | padding-block-700">
+    <h2 class="fs-secondary-heading fw-bold">
+      What they've said
+    </h2>
+    <!--carasoul-->
+    <button class="button">Get Started</button>
+  </section>
+
+  <section class="bg-accent-400 text-neutral-100 padding-block-900">
+    <div class="container">
+      <div class="even-columns">
+        <div>
+          <p class="fs-secondary-heading fw-bold">Simplify how your team works todays.</p>
+        </div>
+        <div><button class="button" data-type="inverted">Get Started</button></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-neutral-900 text-neutral-100 padding-block-700">
+    <div class="even-columns">
+      <div>
+        <a href="#"><img src="images/logo.svg" alt="manage"></a>
+        <ul aria-label="Social links">
+          <li><a aria-label="Facebook" href="#">Facebook</a></li>
+          <li><a aria-label="Youtube" href="#">Youtube</a></li>
+          <li><a aria-label="Twitter" href="#">Twitter</a></li>
+          <li><a aria-label="Pinterest" href="#">Pinterest</a></li>
+          <li><a aria-label="Instagram" href="#">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <nav class="footer-nav">
+          <ul aria-label="Footer">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <form action="">
+          <input type="email"><button class="button">Go</button>
+          <p>Copyright 2020, All Rights Reserved</p>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
 </html>
