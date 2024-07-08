@@ -480,18 +480,20 @@ input:where([type="text"], [type="email"]) {
   justify-self: end;
 }
 
-/* @media(min-width:50em) {
-  .justify-self-end-md{
+@media(min-width:50em) {
+  .justify-self-end-md {
     justify-self: end;
   }
-} */
+}
 
 .container {
   --max-width: 1110px;
   --container-padding: 1rem;
-  width: min(var(--max-width), 100% - (var(--container-paddingpadding)*2));
+  width: min(var(--max-width), 100% - (var(--container-padding)*2));
   margin-inline: auto;
 }
+
+
 
 :where(.flow :not(:first-child)) {
   margin-top: var(--flow-spacer, 4em);
@@ -509,7 +511,23 @@ input:where([type="text"], [type="email"]) {
   --flow-spacer: 5em;
 } */
 
+.text-center {
+  text-align: center;
+}
 
+.text-center p {
+  margin-inline: auto;
+}
+
+@media(max-width:50em) {
+  .text-center-sm-only {
+    text-align: center;
+  }
+
+  .text-center-sm-only p {
+    margin-inline: auto;
+  }
+}
 
 .text-primary-400 {
   color: var(--clr-accent-400);
@@ -628,6 +646,10 @@ input:where([type="text"], [type="email"]) {
 
 .padding-block-900 {
   padding-block: var(--size-900);
+}
+
+.margin-bottom-700 {
+  margin-block-end: var(--size-700);
 }
 
 .display-sm-none {
